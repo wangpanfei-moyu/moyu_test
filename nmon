@@ -1,0 +1,27 @@
+ Nmon生成文件命令（指定目录）
+./nmon  -F test.nmon -s 60 -c 240 -f /opt/test
+
+
+-s10 每 10 秒采集一次数据。
+-c60 采集 60 次，即为采集十分钟的数据。
+-f 生成的数据文件名中包含文件创建的时间。
+-m 生成的数据文件的存放目录。
+
+
+c = CPU    显示CPU相关性能信息数据
+l = CPU Long-term   显示最近一段时间的CPU相关性能信息数据
+- = Faster screen updates    加快屏幕更新速度
+m = Memory     显示内存相关性能信息数据
+j = Filesystems    显示日志文件系统相关性能信息数据
++ = Slower screen updates    减慢屏幕更新速度
+d = Disks   显示磁盘I/O相关性能信息数据
+n = Network   显示网络I/O相关性能信息数据
+V = Virtual Memory   显示虚拟内存相关性能信息数据
+r = Resource   显示系统资源相关性能信息数据
+N = NFS    显示NFS文件系统相关性能信息数据
+v = Verbose hints    简单报告CPU、使用最频繁的磁盘的使用率(性能压力)是否过高，给出的结果为OK/Warnings/Danger。对于CPU来说，使用率(busy程度)低于80%即为OK，高于80%即为Warnings，高于90%即为Danger；对于磁盘来说，使用率(busy程度)低于40%即为OK，高于40%即为Warnings，高于60%即为Danger；
+k = kernel    显示操作系统内核运行状态相关性能信息数据
+t = Top-processes   显示占用系统资源最多的进程的状态信息
+. = only busy disks/procs     仅显示处于busy状态的磁盘IO/进程的性能信息数据
+h = more options    打印帮助信息
+q = Quit     退出Nmon
